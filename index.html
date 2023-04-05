@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de votación</title>
+    </head>
+
+    <body>
+        
+        <h1>FORMULARIO DE VOTACIÓN</h1>
+        <form id="form_voto" method="post" action="">
+        <table width="900" style="border: 1px solid black;">
+           
+            <tr>
+                <td>Nombre y Apellido</td>
+                <td><input type="text" id="nombre">
+                    <span id="error_nombre" style="color:red;"></span>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Alias</td>
+                <td><input type="text" id="alias">
+                    <span id="error_alias" style="color:red;"></span>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>RUT</td>
+                <td><input type="text" id="rut">
+                    <span id="error_rut" style="color:red;"></span>
+                </td>
+            </tr>
+           
+           
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email">
+                    <span id="error_email" style="color:red;"></span>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Región</td>
+                <td>
+                    
+                    <select id="regiones" onchange="lista('comunas','regiones','id_region')">
+                        <option value="" >[Selecionar]</option>
+                    </select>
+                    <span id="error_regiones" style="color:red;"></span>
+                    
+                
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Comuna</td>
+                <td>
+                    
+                    <select id="comunas">
+                        <option value="">[Selecionar]</option>
+                    </select>
+                    <span id="error_comunas" style="color:red;"></span>
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Candidato</td>
+                <td>
+                    
+                    <select id="candidatos">
+                        <option value="">[Selecionar]</option>
+                    </select>
+                    <span id="error_candidatos" style="color:red;"></span>
+                    
+                
+                </td>
+            </tr>
+          
+           
+            <tr>
+                <td>Como se enteró de nosotros</td>
+                <td id="list_medios">
+                    <input type="checkbox" id="medio1" name="medio1" value="1">Web
+                    <input type="checkbox" id="medio2" name="medio2" value="2">TV
+                    <input type="checkbox" id="medio3" name="medio3" value="3">Redes Sociales
+                    <input type="checkbox" id="medio4" name="medio4" value="4">Amigo
+                    <br><span id="error_medio" style="color:red;"></span>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2"><input type="button" value="Votar" onclick="votar();"></td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="2" align="center" id="mensaje"></td>
+                
+            </tr>
+           
+           
+           
+        </table>
+         </form> 
+        
+        
+        
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script src='./js/ajax.js?e'></script>
+        <script src='./js/validations.js?e'></script>
+        <script src='./js/main.js?e'></script>
+
+       
+       
+
+      
+
+    </body>
+    
+</html>
