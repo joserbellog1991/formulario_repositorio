@@ -1,0 +1,27 @@
+/****************
+Autor: José Bello
+correo: joserbellog1991@gmail.com
+github: https://github.com/joserbellog1991
+linkedin: https://www.linkedin.com/in/joser-bellog/
+/***************
+
+Proyecto desarrollado con:
+
+PHP 
+version 7.3
+
+Base de datos:
+MariaDB 10.3.38
+
+Instrucciones:
+- Descargar los archivos
+- Alojarlos en el servidor
+- Crear base de datos e importar el archivo votacion.sql, el cual se cuentra en la carpeta "database"
+- Al crea la base de datos, debe editar el archivo db.php, donde se definen los parametros de la base de datos,
+  este se encuentra en la ruta "./php/config/db.php"  donde debe editar los siguientes campos:
+  -define('DB_HOST', 'localhost');//host del la base de datos
+  -define('DB_USER', 'usuario');//tu usuario de la base de datos
+  -define('DB_PASS', 'contraseña');//tu contraseña de la base de datos
+  -define('DB_NAME', 'nombre de base de datos');// tu nombre de la base de datos
+
+
