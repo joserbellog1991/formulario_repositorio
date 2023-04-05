@@ -6,10 +6,13 @@ function lista(tabla,campo,id){
         let value = "";
            
         if(campo && id)
-        {   console.log(`campo: ${campo} id:${id} ` )   ;
+        { 
             value = $("#"+campo).val(); 
+
+            if(value!=="")
+            {
             where = `where ${id}=${value}`;
-            
+            }
             
             
         }
