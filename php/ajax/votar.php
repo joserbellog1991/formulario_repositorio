@@ -16,13 +16,9 @@
     //comprobamos que el rut no se repita
     
     $num_rut = get_num_row("votos", "rut", $rut);
- 
     if($num_rut>0){
-    
-    echo 3;
-    exit;
-        
-        
+        echo 3;
+        exit;
     }
     
     // Recuperar los medios seleccionados del formulario
@@ -40,12 +36,10 @@
     $sql = "INSERT INTO votos (nombre, alias, rut, email, id_comuna, id_candidato, medios) VALUES ('$nombre', '$alias', '$rut', '$email', '$id_comuna', '$id_candidato', '$medios_str')";
     $result= mysqli_query($con, $sql);
     
-    
+    //enviamos el resultado de la operación
     if($result)
     {
-    echo 1;
-    
-        
+    echo 1;        
     }else{
         echo 0;
     }

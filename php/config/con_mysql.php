@@ -5,6 +5,6 @@
         die("imposible conectarse: ".mysqli_error($con));
     }
     if (@mysqli_connect_errno()) {
-        die("Conexi¨®n fall¨®: ".mysqli_connect_errno()." : ". mysqli_connect_error());
+        die("ConexiÃ³n fallÃ³: ".mysqli_connect_errno()." : ". mysqli_connect_error());
     }
 ?>
